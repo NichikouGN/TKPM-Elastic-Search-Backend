@@ -52,7 +52,7 @@ DATABASE_URL=your_supabase_connection_string_here
 
 Elasticsearch is containerized and managed via Docker Compose.
 
-### Start the container
+### Download the container
 
 From the project root run
 
@@ -62,6 +62,18 @@ sudo docker-compose up -d
 
 #For Windows
 docker compose up -d
+```
+
+### Start the container if already downloaded
+
+From the project root run
+
+```bash
+#For linux
+sudo docker start elasticsearch
+
+#For Windows
+docker start elasticsearch
 ```
 
 ## 4. Run Database Migrations

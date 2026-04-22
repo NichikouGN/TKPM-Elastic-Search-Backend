@@ -9,9 +9,11 @@ const syncBooks = async () => {
       index: "books",
       id: book.id,
       document: {
+        id: book.id,
         title: book.title,
         author: book.author,
         content: book.content,
+        title_suggest: book.title,
       },
     });
   }
